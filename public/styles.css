@@ -1,0 +1,111 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Background gradient */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    margin: auto;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* Styling for Textareas */
+textarea {
+    min-height: 120px;
+}
+
+/* Submit and Save Button Styling */
+input[type="submit"], button {
+    background-color: #2575fc;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.1em;
+    width: 200px;
+    margin: 10px auto;
+}
+
+/* Hover Effect for Buttons */
+input[type="submit"]:hover, button:hover {
+    background-color: #6a11cb;
+}
+
+/* Horizontal Line Styling */
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    input[type="submit"], button {
+        width: 100%;
+    }
+}
+
+/* Accessibility Styling */
+input, button {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #2575fc;
+}

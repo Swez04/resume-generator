@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            margin: auto;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        button, input[type="submit"] {
+            background-color: #2575fc;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover, input[type="submit"]:hover {
+            background-color: #6a11cb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📄 AI-Powered Resume Generator</h1>
+        <p>Create a professional resume in seconds!</p>
+    </header>
+    <main>
+        {{{body}}}
+    </main>
+    <footer>
+        <p>&copy; 2024 Resume Generator | Designed with ❤️</p>
+    </footer>
+</body>
+</html>
